@@ -2,7 +2,7 @@ node default {
 
 }
 
-node 'sbx529eff0' {
+node 'sbx529eff0','t1','t2','t3' {
 
   package {'Sensu':
     ensure          => 'installed',
