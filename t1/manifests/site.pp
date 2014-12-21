@@ -15,11 +15,6 @@ node 'sbx529eff0' {
     ensure             => present,
     path               => 'c:/Windows/Temp/sensu-0.14.0-1.msi',
     source             => 'puppet:///files/sensu-0.14.0-1.msi',
-
- if $osfamily == 'windows' {
-      File { source_permissions => ignore }
-    }
-
     source_permissions => ignore,
   }
 }
