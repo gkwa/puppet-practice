@@ -1,0 +1,11 @@
+---
+:backends:
+  - eyaml
+:hierarchy:
+  - "nodes/%{fqdn}"
+  - "env/%{env}"
+  - common
+:eyaml:
+  :datadir: /etc/puppet/hieradata
+  :pkcs7_private_key: /etc/puppet/keys/private_key.pkcs7.pem
+  :pkcs7_public_key: /etc/puppet/keys/public_key.pkcs7.pem
